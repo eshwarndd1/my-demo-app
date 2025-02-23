@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Build Maven') {
             steps {
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Chandreyees/demo-app']])
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/eshwarndd1/my-demo-app']])
                bat 'mvn clean package -DskipTests'
             }
         }
